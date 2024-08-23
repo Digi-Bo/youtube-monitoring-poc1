@@ -1,4 +1,4 @@
-# POC 1 : Récupération et affichage des transcripts YouTube**
+# POC 1 : Récupération et affichage des transcripts YouTube
    - **Fonctionnalité :** Extraction automatique des transcripts à partir d'une URL YouTube
    - **Démonstration :** Interface permettant de saisir une URL YouTube et d'afficher le transcript correspondant
 
@@ -7,32 +7,31 @@
 ## Installation de l'environnement python avec Conda
 
 1. **Créer un environnement virtuel avec conda**
-    ```
-    conda create -p ./venv python==3.12 -y
-    ```
+```
+conda create -p ./venv python==3.12 -y
+```
 le `p`implique qu'il sera créé dans le dossier de travail
 
 
 - **Pour l'activer**
 
-    ```
-    conda activate ./venv
-    ```
+```
+conda activate ./venv
+```
 
 - **Si vous souhaitez le supprimer par la suite**
-    ```
-    rm -rf ./venv
-    ```
+```
+rm -rf ./venv
+```
 
 
 
 
 **Lancer l'app streamlit** 
 
-    ```
-    streamlit run main.py
-
-    ```
+```
+streamlit run main.py
+```
 
 
 
