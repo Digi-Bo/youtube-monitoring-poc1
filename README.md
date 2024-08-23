@@ -3,6 +3,40 @@
    - **Démonstration :** Interface permettant de saisir une URL YouTube et d'afficher le transcript correspondant
 
 
+
+## Installation de l'environnement python avec Conda
+
+1. **Créer un environnement virtuel avec conda**
+    ```
+    conda create -p ./venv python==3.12 -y
+    ```
+le `p`implique qu'il sera créé dans le dossier de travail
+
+
+- **Pour l'activer**
+
+    ```
+    conda activate ./venv
+    ```
+
+- **Si vous souhaitez le supprimer par la suite**
+    ```
+    rm -rf ./venv
+    ```
+
+
+
+
+**Lancer l'app streamlit** 
+
+    ```
+    streamlit run main.py
+
+    ```
+
+
+
+
 ## Logique de l'architecture :
 
 ```mermaid

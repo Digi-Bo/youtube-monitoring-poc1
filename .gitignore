@@ -1,3 +1,4 @@
-youtube-summarizer.mm
 venv/
 .env
+__pycache__/
+*.pyc

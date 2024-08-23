@@ -17,14 +17,15 @@ def main():
     # Création de l'interface utilisateur
     url = create_ui()
     
-    # Si une URL est fournie, on extrait le transcript
+    # Si une URL est fournie, on extrait le meilleur transcript
     if url:
         try:
-            transcript = extract_transcript(url)
-            st.success("Transcript extrait avec succès!")
+            transcript, language = extract_transcript(url)
+            st.success(f"Transcript extrait avec succès en {language}!")
             st.text_area("Transcript:", value=transcript, height=300)
         except Exception as e:
             st.error(f"Erreur lors de l'extraction du transcript: {str(e)}")
+            st.info("Assurez-vous que la vidéo dispose d'un transcript.")
 
 if __name__ == "__main__":
     main()
